@@ -7,20 +7,18 @@
     <title>Jumper Man App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="app-container">
+<body class="black-background">
+    <div class="container">
         <header>
-            <div class="logo">
-                <img src="jumperman-logo.png" alt="Jumper Man Logo">
-            </div>
+            <img src="jumperman-logo.png" alt="The Jumper Man Logo" class="logo">
             <h1>The Jumper Man App</h1>
             <p>Welcome to your Bounce House business management tool!</p>
         </header>
         
         <div class="button-container">
-            <button id="createInvoice">Create Invoice</button>
-            <button disabled>Coming Soon</button>
-            <button disabled>Coming Soon</button>
+            <button class="button active" onclick="showInvoice()">Create Invoice</button>
+            <button class="button coming-soon" onclick="comingSoon()">Create Contract</button>
+            <button class="button coming-soon" onclick="comingSoon()">Create Waiver</button>
         </div>
         
         <section class="contact-form">
